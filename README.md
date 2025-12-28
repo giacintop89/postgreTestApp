@@ -37,7 +37,7 @@ streamlit run telemetry_viewer.py
 ```
 
 ## Connection settings
-`telemetry_viewer.py` uses the connection string `postgresql+psycopg2://postgres:PASSWORD@localhost:5432/postgres`. Update this string to match your local credentials or set up a role/password that matches it before running the app.
+`telemetry_viewer.py` uses the connection string `postgresql+psycopg2://postgres:PASSWORD@localhost:PORT/postgres`. Update this string to match your local credentials or set up a role/password that matches it before running the app.
 
 ## Table layout
 - `ts` (timestamptz), `device_id` (text), `site` (text), `metric` (text), `value_num` (double precision), `value_text` (text), `status` (smallint), `payload` (jsonb, default `{}`).
